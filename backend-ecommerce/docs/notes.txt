@@ -23,3 +23,6 @@ $ curl http://localhost:3000 --include
 
 @ Install Compression (compress response bodies for all requests)
 $ npm install compression --save-dev
+
+# Install Mongoose
+$ npm install mongoose --save-dev
