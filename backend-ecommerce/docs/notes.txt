@@ -1,0 +1,25 @@
+
+# Init project (create package.json)
+$ npm init -y
+
+# Check Node version
+$ node -v
+
+# Install Express
+$ npm install express --save
+
+# Start project
+$ node server.js
+
+@@ Install important package @@
+
+# Install Morgan (show log when users request to server)
+$ npm install morgan --save
+
+@ Install Helmet (protect private infomation)
+$ npm install helmet --save-dev
+
+$ curl http://localhost:3000 --include
+
+@ Install Compression (compress response bodies for all requests)
+$ npm install compression --save-dev
