@@ -26,3 +26,6 @@ $ npm install compression --save-dev
 
 # Install Mongoose
 $ npm install mongoose --save-dev
+
+# Install dotenv
+$ npm install dotenv --save-dev
