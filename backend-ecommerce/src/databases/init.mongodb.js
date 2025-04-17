@@ -2,8 +2,10 @@
 
 const mongoose = require("mongoose");
 const { printConnetion, checkOverload } = require("../helpers/check.connect");
-const connectionString = "mongodb://localhost:27017/shopdev";
+const { database: { host, port, name } } = require("../configs/config.mongodb");
+const connectionString = `mongodb://${host}:${port}/${name}`;
 
+console.log(connectionString);
 class Database {
   constructor() {
     this._connect();
