@@ -39,3 +39,9 @@ $ npm install bcrypt --save
 
 # Install Crypto
 $ npm install crypto --save
+
+# Install JsonWebToken (JWT)
+$ npm install jsonwebtoken --save
+
+# Install Lodash (like DTO in Java Spring)
+$ npm install lodash --save
