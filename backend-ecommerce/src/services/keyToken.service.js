@@ -1,7 +1,7 @@
 "use strict";
 const KeyTokenModel = require("../models/keytoken.model");
 
-class KeyToken {
+class keyTokenService {
     static createKeyToken = async ({ userId, publicKey, privateKey }) => {
         try {
             const tokens = await KeyTokenModel.create({
@@ -17,4 +17,4 @@ class KeyToken {
     };
 }
 
-module.exports = KeyToken;
+module.exports = keyTokenService;
