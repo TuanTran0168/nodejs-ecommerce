@@ -4,8 +4,13 @@
 
 POST {{url_dev}}shop/signup
 Content-Type: application/json
+x-api-key: 470b8a71f3f0ea1433e0a1fb6217e92f
+
 {
     "name": "Tuấn Trần",
     "email": "tuan4@gmail.com",
     "password": "123456"
 }
+
+### create api key
+POST {{url_dev}}apikey/create
