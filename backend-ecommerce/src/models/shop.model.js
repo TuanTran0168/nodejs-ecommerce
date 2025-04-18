@@ -10,7 +10,6 @@ var shopSchema = new mongoose.Schema({
     name:{
         type:String,
         required:true,
-        unique:true,
         index:true,
     },
     email:{
@@ -25,7 +24,7 @@ var shopSchema = new mongoose.Schema({
     status:{
         type:String,
         enum:['active', 'inactive'],
-        default:'active',
+        default:'inactive',
     },
     verify: {
         type: mongoose.Schema.Types.Boolean,
