@@ -10,6 +10,7 @@ $ npm install express --save
 
 # Start project
 $ node server.js
+$ npm run start
 
 @@ Install important package @@
 
@@ -29,3 +30,12 @@ $ npm install mongoose --save-dev
 
 # Install dotenv
 $ npm install dotenv --save-dev
+
+--- Install Extension: Mongo Snippets for Node-js
+--- Install Extension: httpYac - Rest Client
+
+# Install Bcrypt
+$ npm install bcrypt --save
+
+# Install Crypto
+$ npm install crypto --save

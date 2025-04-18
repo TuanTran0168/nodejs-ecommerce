@@ -16,13 +16,7 @@ require("./databases/init.mongodb");
 checkOverload();
 
 // Init routes
-app.get("/", (req, res, next) => {
-  const stringCompression = " ALO ALO ALO ";
-  return res.status(200).json({
-    message: "Hello World, I'm Tuấn Trần",
-    metadata: stringCompression.repeat(1000000),
-  });
-});
+app.use("/", require("./routes"));
 
 // handle errors
 
