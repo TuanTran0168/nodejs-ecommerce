@@ -23,5 +23,22 @@ checkOverload();
 app.use("/", require("./routes"));
 
 // handle errors
+app.use((req, res, next) => {
+    console.log("handle errors A")
+    const error = new Error("Not Found");
+    error.status = 404;
+    next(error);
+})
+
+app.use((error, req, res, next) => {
+    console.log("handle errors B")
+    const statusCode = error.status || 500
+    
+    return res.status(statusCode).json({
+        status: "error",
+        code: statusCode,
+        message: error.message || "INTERNAL SERVER ERROR"
+    })
+})
 
 module.exports = app;
