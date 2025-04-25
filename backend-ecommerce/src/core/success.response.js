@@ -18,8 +18,6 @@ class SuccessResponse {
     }
 
     send(res, headers = {}) {
-        console.log("BUG HERE")
-        console.log("BUG HERE: ", this.status)
         return res.status(this.status).json(this);
     }
 }
@@ -39,5 +37,6 @@ class CREATED extends SuccessResponse {
 
 module.exports = {
     OK,
-    CREATED
+    CREATED,
+    SuccessResponse
 }
