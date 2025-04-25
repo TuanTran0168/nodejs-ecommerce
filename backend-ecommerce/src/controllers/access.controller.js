@@ -11,6 +11,14 @@ class AccessController {
         }).send(res);
     }
 
+    logout = async (req, res, next) => {
+        // The `keyStore` variable is assigned in the function `authentication` in authUtils
+        new SuccessResponse({
+            message: "Logout Success!",
+            metadata: await AccessService.logout(req.keyStore)
+        }).send(res)
+    }
+
     signUp = async (req, res, next) => {
         console.log(`P::signUp::`, req.body);
 
