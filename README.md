@@ -43,7 +43,7 @@ backend-ecommerce/
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/backend-ecommerce.git
+git clone https://github.com/TuanTran0168/nodejs-ecommerce.git
 cd backend-ecommerce
 ```
 
